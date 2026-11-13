@@ -1,0 +1,121 @@
+/* Bible Enigma site. Plain and calm, the app's colors, system fonts only (no web fonts, no scripts). */
+:root {
+  --background: #f7f3ec;
+  --surface: #fffdf9;
+  --ink: #1f2430;
+  --ink-muted: #5e6472;
+  --border: #e2d9ca;
+  --accent-ink: #6e4e12;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+header.site {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 0;
+  font-size: 0.95rem;
+}
+
+header.site a {
+  color: var(--ink-muted);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+h2 {
+  font-size: 1.35rem;
+  margin: 2.25rem 0 0.75rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin: 1.75rem 0 0.5rem;
+}
+
+a {
+  color: var(--accent-ink);
+  overflow-wrap: anywhere;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  overflow-wrap: anywhere;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+li + li {
+  margin-top: 0.4rem;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background: var(--surface);
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: var(--background);
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+}
+
+.links a {
+  font-weight: 600;
+}
+
+footer {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+  color: var(--ink-muted);
+  font-size: 0.9rem;
+}

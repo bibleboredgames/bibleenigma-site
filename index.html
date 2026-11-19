@@ -3,18 +3,184 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bible Enigma</title>
-<meta name="description" content="Bible Enigma, a Bible word-puzzle game by Bible Bored Games.">
-<link rel="stylesheet" href="/style.css">
+<title>Bible Enigma: decode a verse a day</title>
+<meta name="description" content="Each day a verse of the King James Bible is hidden behind a number code. Work out the letters, one square at a time, and read it. A Bible word puzzle by Bible Bored Games.">
+<meta name="theme-color" content="#2E4D7B">
+<link rel="canonical" href="https://bibleenigma.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bible Enigma">
+<meta property="og:title" content="Bible Enigma: decode a verse a day">
+<meta property="og:description" content="Each day a verse of the King James Bible is hidden behind a number code. Work out the letters and read it.">
+<meta property="og:url" content="https://bibleenigma.app/">
+<meta property="og:image" content="https://bibleenigma.app/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Bible Enigma: the linen ribbon on navy, beside a verse written as a number code.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/assets/img/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/Literata-400.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-<main>
-<h1>Bible Enigma</h1>
-<p>A Bible word-puzzle game by Bible Bored Games.</p>
-<ul class="links">
-<li><a href="/privacy/">Privacy Policy</a></li>
-<li><a href="/support/">Support</a></li>
-</ul>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="on-navy">
+  <header class="site-head">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="Bible Enigma, home">
+        <svg class="ribbon" viewBox="-52 -122 130 354" aria-hidden="true" focusable="false"><path fill="#F2EADB" d="M-50.00,-400.00 L-50.00,0.00 L-49.99,5.23 L-49.95,10.45 L-49.88,15.68 L-49.78,20.91 L-49.66,26.14 L-49.51,31.36 L-49.34,36.59 L-49.13,41.82 L-48.90,47.05 L-48.65,52.27 L-48.36,57.50 L-48.05,62.73 L-47.71,67.95 L-47.34,73.18 L-46.95,78.41 L-46.53,83.64 L-46.08,88.86 L-45.61,94.09 L-45.11,99.32 L-44.58,104.55 L-44.02,109.77 L-43.44,115.00 L-42.83,120.23 L-42.20,125.45 L-41.53,130.68 L-40.84,135.91 L-40.12,141.14 L-39.38,146.36 L-38.61,151.59 L-37.81,156.82 L-36.98,162.05 L-36.13,167.27 L-35.24,172.50 L-34.34,177.73 L-33.40,182.95 L-32.44,188.18 L-31.45,193.41 L-30.43,198.64 L-29.39,203.86 L-28.32,209.09 L24.00,168.00 L76.44,230.91 L75.13,225.14 L73.86,219.36 L72.62,213.59 L71.42,207.82 L70.24,202.05 L69.10,196.27 L68.00,190.50 L66.92,184.73 L65.88,178.95 L64.87,173.18 L63.90,167.41 L62.96,161.64 L62.05,155.86 L61.17,150.09 L60.33,144.32 L59.52,138.55 L58.74,132.77 L58.00,127.00 L57.29,121.23 L56.61,115.45 L55.97,109.68 L55.35,103.91 L54.78,98.14 L54.23,92.36 L53.72,86.59 L53.24,80.82 L52.79,75.05 L52.38,69.27 L52.00,63.50 L51.65,57.73 L51.34,51.95 L51.06,46.18 L50.81,40.41 L50.59,34.64 L50.41,28.86 L50.26,23.09 L50.15,17.32 L50.07,11.55 L50.02,5.77 L50.00,0.00 L50.00,-400.00 Z"/></svg>
+        <span>Bible Enigma</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="/how-to-play/">How to play</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <h1 id="hero-title">A verse a day,<br> hidden behind a&nbsp;code</h1>
+        <p class="lede">Each day a verse of the King James Bible is written in numbers. Work out the letters, one square at a time, until you can read it.</p>
+        <div class="actions">
+          <!--
+            APP STORE: when the game is live, replace this <p class="soon"> with Apple's official
+            "Download on the App Store" badge (black, from Apple's marketing guidelines page),
+            linked to the app's App Store URL. Do the same in the closing section below.
+          -->
+          <p class="soon">Coming soon to the App Store</p>
+          <a class="text-link" href="/how-to-play/">How to play</a>
+        </div>
+      </div>
+
+      <figure class="board-figure">
+        <div class="board-card" role="img" aria-label="An example Verse Cipher board for Psalm 119:105, partly solved. Some letters are filled in. The empty squares show the numbers that stand for their letters. One square is selected and one carries a star.">
+          <div class="board-head" aria-hidden="true">
+            <div><span class="kind">Verse Cipher</span><span class="title">Example · Easy</span></div>
+            <div class="dots"><i></i><i></i><i></i></div>
+          </div>
+          <div class="board" aria-hidden="true">
+            <span class="word"><span class="cell"><span class="l">T</span><span class="u"></span><span class="n"></span></span><span class="cell"><span class="l">H</span><span class="u"></span><span class="n"></span></span><span class="cell"><span class="l"></span><span class="u"></span><span class="n">15</span></span></span>
+            <span class="word"><span class="cell"><span class="l"></span><span class="u"></span><span class="n">3</span></span><span class="cell flash"><span class="l">O</span><span class="u"></span><span class="n"></span></span><span class="cell"><span class="l"></span><span class="u"></span><span class="n">5</span></span><span class="cell"><span class="l"></span><span class="u"></span><span class="n">19</span></span></span>
+            <span class="word"><span class="cell"><span class="l"></span><span class="u"></span><span class="n">21</span></span><span class="cell"><span class="l"></span><span class="u"></span><span class="n">11</span></span></span>
+            <span class="word"><span class="cell"><span class="l">A</span><span class="u"></span><span class="n"></span></span></span>
+            <span class="word"><span class="cell sel"><span class="l"></span><span class="u"></span><span class="n">18</span></span><span class="cell"><span class="l">A</span><span class="u"></span><span class="n"></span></span><span class="cell"><span class="l"></span><span class="u"></span><span class="n">13</span></span><span class="cell"><span class="l"></span><span class="u"></span><span class="n">25</span></span></span>
+            <span class="word"><span class="cell"><span class="l"></span><span class="u"></span><span class="n">14</span></span><span class="cell"><span class="l">N</span><span class="u"></span><span class="n"></span></span><span class="cell"><span class="l">T</span><span class="u"></span><span class="n"></span></span><span class="cell"><span class="l">O</span><span class="u"></span><span class="n"></span></span></span>
+            <span class="word"><span class="cell"><span class="l"></span><span class="u"></span><span class="n"><b>✦</b>13</span></span><span class="cell"><span class="l"></span><span class="u"></span><span class="n">15</span></span></span>
+            <span class="word"><span class="cell"><span class="l"></span><span class="u"></span><span class="n">2</span></span><span class="cell"><span class="l">E</span><span class="u"></span><span class="n"></span></span><span class="cell"><span class="l">E</span><span class="u"></span><span class="n"></span></span><span class="cell"><span class="l">T</span><span class="u"></span><span class="n"></span></span><span class="cell sym"><span class="l">,</span><span class="u"></span><span class="n"></span></span></span>
+            <span class="word"><span class="cell"><span class="l">A</span><span class="u"></span><span class="n"></span></span><span class="cell"><span class="l">N</span><span class="u"></span><span class="n"></span></span><span class="cell"><span class="l"></span><span class="u"></span><span class="n">19</span></span></span>
+            <span class="word"><span class="cell"><span class="l">A</span><span class="u"></span><span class="n"></span></span></span>
+            <span class="word"><span class="cell"><span class="l"></span><span class="u"></span><span class="n">18</span></span><span class="cell"><span class="l"></span><span class="u"></span><span class="n">21</span></span><span class="cell"><span class="l"></span><span class="u"></span><span class="n">17</span></span><span class="cell"><span class="l">H</span><span class="u"></span><span class="n"></span></span><span class="cell"><span class="l">T</span><span class="u"></span><span class="n"></span></span></span>
+            <span class="word"><span class="cell"><span class="l"></span><span class="u"></span><span class="n">14</span></span><span class="cell"><span class="l">N</span><span class="u"></span><span class="n"></span></span><span class="cell"><span class="l">T</span><span class="u"></span><span class="n"></span></span><span class="cell"><span class="l">O</span><span class="u"></span><span class="n"></span></span></span>
+            <span class="word"><span class="cell"><span class="l"></span><span class="u"></span><span class="n">13</span></span><span class="cell"><span class="l"></span><span class="u"></span><span class="n">15</span></span></span>
+            <span class="word"><span class="cell"><span class="l"></span><span class="u"></span><span class="n">25</span></span><span class="cell"><span class="l">A</span><span class="u"></span><span class="n"></span></span><span class="cell"><span class="l">T</span><span class="u"></span><span class="n"></span></span><span class="cell"><span class="l">H</span><span class="u"></span><span class="n"></span></span><span class="cell sym"><span class="l">.</span><span class="u"></span><span class="n"></span></span></span>
+          </div>
+          <div class="board-foot" aria-hidden="true">3 mistakes left</div>
+        </div>
+        <figcaption>Psalm 119:105, King James Version, partly solved. An example, not a daily puzzle.</figcaption>
+      </figure>
+    </div>
+  </section>
+</div>
+
+<main id="main">
+  <section class="section" aria-labelledby="daily-title">
+    <div class="wrap split daily">
+      <h2 id="daily-title">One verse a day, the same for everyone</h2>
+      <div class="prose">
+        <p>Every day there is one daily verse, and every player gets the same one on the same date. Nothing about it is shown before you solve it, so the words are yours to find. When the last letter falls into place, you read the verse whole, with its reference and a short line of context.</p>
+        <p>It takes a few minutes. Done each morning, or each evening, it becomes a small and steady habit of reading Scripture.</p>
+      </div>
+      <ul class="facts">
+        <li><span class="k">Streak</span><span>Counts the days in a row you solve a puzzle.</span></li>
+        <li><span class="k">Reminder</span><span>An optional note when the day’s verse is ready. You choose whether to turn it on.</span></li>
+        <li><span class="k">Sharing</span><span>Share your result as a short line of text that never gives the verse away.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="shots-title">
+    <div class="wrap">
+      <div class="shots-head">
+        <h2 id="shots-title">Inside the game</h2>
+      </div>
+      <!--
+        SCREENSHOTS: these are the App Store screenshots from BibleDecoder store/screenshots/ios/iphone-6.9/
+        (02, 03 and 04), resized. They still show the old green keys. Replace them with the new
+        captures after BibleDecoder #155.
+      -->
+      <div class="shots-scroll">
+        <ul class="shots">
+          <li>
+            <figure class="shot">
+              <div class="frame"><img src="/assets/img/screen-cipher.webp" width="600" height="1304" loading="lazy" decoding="async" alt="A Verse Cipher puzzle in progress. Letters sit over numbered lines; above the keyboard, letters already found are shaded green."></div>
+              <figcaption><strong>Verse Cipher</strong>Deduce the verse letter by letter.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="shot">
+              <div class="frame"><img src="/assets/img/screen-solved.webp" width="600" height="1304" loading="lazy" decoding="async" alt="A solved puzzle: Ecclesiastes 3:1 in full, “To every thing there is a season, and a time to every purpose under the heaven:”, with a line of context and the points earned."></div>
+              <figcaption><strong>Solved</strong>Then read it whole, with its reference.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="shot">
+              <div class="frame"><img src="/assets/img/screen-missing-words.webp" width="600" height="1304" loading="lazy" decoding="async" alt="A Missing Words puzzle: a verse from Psalm 121 with blanks, and a word bank below to choose from."></div>
+              <figcaption><strong>Missing Words</strong>Fill the blanks from a word bank.</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="modes-title">
+    <div class="wrap">
+      <h2 id="modes-title">Two ways to play</h2>
+      <div class="modes">
+        <div class="mode">
+          <h3>Verse Cipher</h3>
+          <p>Every letter of the verse is replaced by a number, and the same number always means the same letter. A few letters are given. You deduce the rest, with three mistakes allowed, across five difficulties from Beginner to Expert.</p>
+          <a class="text-link" href="/how-to-play/#verse-cipher">How Verse Cipher works</a>
+        </div>
+        <div class="mode">
+          <h3>Missing Words</h3>
+          <p>A well-known verse with a few words taken out. Choose the right word for each blank from the word bank beneath it.</p>
+          <a class="text-link" href="/how-to-play/#missing-words">How Missing Words works</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
+
+<section class="on-navy closing" aria-labelledby="closing-title">
+  <div class="wrap">
+    <div>
+      <h2 id="closing-title">Coming soon to the App Store</h2>
+      <p>Scripture is the King James Version.</p>
+    </div>
+    <!--
+      APP STORE: put the "Download on the App Store" badge here when the game is live, linked to
+      the app's App Store URL.
+    -->
+  </div>
+</section>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <nav aria-label="Footer">
+      <ul class="foot-links">
+        <li><a href="/how-to-play/">How to play</a></li>
+        <li><a href="/support/">Support</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <!-- STUDIO SITE: the studio's site will move to https://bibleboredgames.com. Change this one link on each page (index.html, how-to-play/index.html). -->
+        <li><a href="https://bibleboredgames.github.io/links/">More from Bible Bored Games</a></li>
+      </ul>
+    </nav>
+    <p class="studio">Bible Bored Games. A play on the Word.</p>
+  </div>
+</footer>
 </body>
 </html>

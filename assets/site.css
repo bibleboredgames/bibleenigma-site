@@ -458,7 +458,7 @@ p:last-child { margin-bottom: 0; }
 .shot figcaption strong { display: block; font-weight: 600; color: var(--ink); }
 
 @media (min-width: 960px) {
-  .shots { gap: 48px; max-width: 920px; }
+  .shots { gap: 80px; }
 }
 /* On phones the screenshots sit in a row you can swipe through. */
 @media (max-width: 719px) {
